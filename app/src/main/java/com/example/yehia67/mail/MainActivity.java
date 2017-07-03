@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boolean Wald = wald.isChecked();
         boolean bnt = bent.isChecked();
         String FinalRequest = "Request for"+ name + "\n"+"wald"+ Wald+"\n"+"bnt" + bnt+"\n";
-        
+
     }
 
 }
