@@ -1,5 +1,6 @@
 package com.example.yehia67.mail;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,8 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        String name = edit.getText().toString();
         boolean Wald = wald.isChecked();
         boolean bnt = bent.isChecked();
-        String FinalRequest = "Request for"+ name + "\n"+"wald"+ Wald+"\n"+"bnt" + bnt+"\n";
-
+        String FinalRequest = "Request for"+ name + "\n"+"wald"+ Wald+"\n"+"bnt" + bnt+"\n";//modifcatiom hnaa
+        Intent intentTotheNextScreen = new Intent(MainActivity.this,Activity2.class);
+        intentTotheNextScreen.putExtra("Extra key",FinalRequest);
+        startActivity(intentTotheNextScreen);
     }
 
 }
