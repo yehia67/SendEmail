@@ -38,7 +38,7 @@ public class Activity2 extends AppCompatActivity implements View.OnClickListener
                 startActivity(intent);
             } catch (Exception e){
                  e.printStackTrace();
-                Toast.makeText(this,"there is no email apps in your phone.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"there is no email apps in your phone.",Toast.LENGTH_LONG).show();
             }
 
             }
